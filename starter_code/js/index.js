@@ -1,20 +1,27 @@
 $(document).ready(function(){
 
 
-/*
 
+/* JS IS CONNECTED - THX SARAH! 
 function myFunction() {
     alert("Hello!");
 }
-*/
+myFunction();
+*/ 
+
+
+	$("#city-form").submit(showCity);
 	
 
-	function question1(){
-		$("h1").css("color", "blue");
-	}
+		function showCity() {
+			event.preventDefault();
+			$("body").css("background", "url(images/nyc.jpg)");
+		}
 
-	$(h1).click(question1);
-		
+
+// 
+//	$(h1).click(question1);
+	
 
 /*
 
