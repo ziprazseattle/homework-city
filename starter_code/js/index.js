@@ -9,6 +9,7 @@ function myFunction() {
 myFunction();
 */ 
 
+/* THIS WORKS
 
 	$("#city-form").submit(showCity);
 	
@@ -17,10 +18,24 @@ myFunction();
 			event.preventDefault();
 			$("body").css("background", "url(images/nyc.jpg)");
 		}
+*/
 
 
-// 
-//	$(h1).click(question1);
+	$("#city-form").submit(showCity);
+	
+
+		function showCity() {
+			event.preventDefault();
+
+		var c = $("#city-type").val(); 
+		
+		if ( c == "NY") {
+			    alert("Hello!");
+			// $("body").css("background", "url(images/nyc.jpg)");
+		}
+
+	}
+
 	
 
 /*
