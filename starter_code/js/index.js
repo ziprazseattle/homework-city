@@ -27,12 +27,31 @@ myFunction();
 		function showCity() {
 			event.preventDefault();
 
-		var c = $("#city-type").val(); 
-		
-		if ( c == "NY" || c == "New York" || c == "New York City") {
-			    
-			$("body").css("background", "url(images/nyc.jpg)");
-		}
+			var city = $("#city-type").val(); 
+			
+			if ( city == "NY" || city == "New York" || city == "New York City") {
+				    
+				$("body").css("background", "url(images/nyc.jpg)");
+			}
+
+			else if ( city == "San Francisco" || city == "Bay Area" || city == "SF") {
+				    
+				$("body").css("background", "url(images/sf.jpg)");
+			}
+
+			else if ( city == "Los Angeles" || city == "LAX" || city == "LA") {
+				    
+				$("body").css("background", "url(images/la.jpg)");
+			}
+
+			else if ( city == "Sydney" || city == "SYD" ) {
+				    
+				$("body").css("background", "url(images/sydney.jpg)");
+			}
+
+			else {
+				alert("Try capitolizing. Otherwise, we may not have pictures for that city yet. Upload one!");
+			}
 
 	}
 
