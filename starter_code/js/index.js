@@ -29,9 +29,9 @@ myFunction();
 
 		var c = $("#city-type").val(); 
 		
-		if ( c == "NY") {
-			    alert("Hello!");
-			// $("body").css("background", "url(images/nyc.jpg)");
+		if ( c == "NY" || c == "New York" || c == "New York City") {
+			    
+			$("body").css("background", "url(images/nyc.jpg)");
 		}
 
 	}
